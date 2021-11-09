@@ -1,12 +1,8 @@
 /*MOBILE FIRST*/
 :root {
-    --fons: #010001;
-    --vermell: #e6384b;
-    --groc: #ffcd5e;
-    --taronja: #ee6e3b;
-    --blau-fosc: #28394e;
-    --blau-mig: #2e60a0;
-    --blau-clar: #6f99b8;
+    --primari: #808080;  
+    --fons: #d8d7d7;
+    --taronja: #ee7463;
 }
 
 * {
@@ -19,23 +15,58 @@ body {
     padding: 15px 13px 15px 13px;
     background-color: white;
     max-width: 1200px;
+    font-size: 1rem;
+}
+
+h1 {
+    color: var(--taronja);
+    text-align: center;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primari);
+}
+
+a:hover {
+    color: var(--taronja);
+}
+
+
+i {
+    margin-right: .5rem;
 }
 
 /*HEADER*/
 .header {
-    background-color: var(--fons);
+    background-image: url(./img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     margin-bottom: 20px;
 }
 
+img {
+    width: 70px;
+}
+
 .nav {
-    background-color: var(--blau-fosc);
-    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    padding: 20px 10px 20px 10px;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .link {
-    background-color: var(--vermell);
     min-height: 20px;
     margin-bottom: 20px;
 }
@@ -44,7 +75,7 @@ body {
 }
 
 .hero {
-    background-color: var(--taronja);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 20px 20px 20px 20px;
 }
 
@@ -97,6 +128,7 @@ body {
 .footer {
     background-color: var(--fons);
     padding: 20px;
+    text-align: center;
 }
 
 /*MEDIA QUERIES -- > TABLET */
