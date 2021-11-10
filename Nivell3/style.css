@@ -65,9 +65,33 @@ i {
     max-width: 100%;
 }
 
+.animation-logo-content {
+    min-width: 80px;
+    min-height: 80px;
+}
 
 img {
     width: 70px;
+    color: green;
+    animation-name: logo;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    0% {
+        width: 70px;
+    }25%{
+        width: 72px;
+    }50%{
+        width: 76px;
+    }75%{
+        width: 72px;
+    }100%{
+        width: 70px;
+    }
 }
 
 .link {
@@ -84,6 +108,29 @@ img {
     max-width: 1000px;
     margin-top: 150px;
     margin-bottom: 0;
+}
+
+.hero-claim>h1 {
+    animation-name: textAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes textAnimation {
+    0%{
+        color: var(--taronja);
+        word-spacing: 1.5rem;
+    }33%{
+        color: var(--salmo);
+        word-spacing: 1.8rem;
+    }66%{
+        color: var(--groc);
+        word-spacing: 1.4rem;
+    }100%{
+        color: var(--salmo);
+        word-spacing: 1.5rem;
+    }
 }
 
 /*MAIN*/
